@@ -11,7 +11,7 @@ var app = builder.Build();
 app.MapGet("/", () =>
 {
     app.Logger.LogInformation("Initial Home Get");
-    return "GET - Net 6 Running ... 15092023-v1.0.0 CI/CD in AKS v1.0.0 POLYGLOT - JENKINS";
+    return $"GET - Net 6 Running ... 15092023-v1.0.0 CI/CD in AKS v1.0.0 POLYGLOT - JENKINS - {DateTime.Now.ToString("dd/MMM/yyyy HH:mm:ss")}";
 });
 
 app.MapPost("/", () =>
