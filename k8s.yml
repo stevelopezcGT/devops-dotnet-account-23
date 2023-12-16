@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: service-polyglot
-        image: stevelopez/ms-test:latest
+        image: stevelopez/devops-ms-account:latest
         ports:
         - containerPort: 80 #change port value 8080 on microservice development
         imagePullPolicy: Always
